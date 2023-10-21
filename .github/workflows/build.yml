@@ -51,3 +51,4 @@ jobs:
         with:
           name: VALORANT-rank-yoinker-${{ steps.commit.outputs.short }}
           path: build/exe.win-amd64-${{ env.PYTHON_VERSION }}/**
+ 
