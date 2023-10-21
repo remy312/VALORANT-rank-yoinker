@@ -74,7 +74,6 @@ class Rpc():
                             small_image=agent_img,
                             small_text=agent,
                             start=self.start_time,
-                            buttons=[{"label": "What's this? 👀", "url": "https://zaykenyon.github.io/VALORANT-rank-yoinker/"}]
                         )
                         self.log("RPC in-game data update")
                     elif presence["sessionLoopState"] == "MENUS":
@@ -103,7 +102,6 @@ class Rpc():
                             large_text=image_text,
                             small_image=str(self.data.get("rank")),
                             small_text=self.data.get("rank_name"),
-                            buttons=[{"label": "What's this? 👀", "url": "https://zaykenyon.github.io/VALORANT-rank-yoinker/"}]
                         )
                         self.log("RPC menu data update")
                     elif presence["sessionLoopState"] == "PREGAME":
@@ -126,7 +124,6 @@ class Rpc():
                             large_text=mapText,
                             small_image=str(self.data.get("rank")),
                             small_text=self.data.get("rank_name"),
-                            buttons=[{"label": "What's this? 👀", "url": "https://zaykenyon.github.io/VALORANT-rank-yoinker/"}]
                         )
                         self.log("RPC agent-select data update")
             except InvalidID:
